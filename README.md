@@ -7,7 +7,7 @@ Amezaga  code es una empresa formada por estudiantes de UNMSM con el fin de prod
 
 Documentación
 
--  <https://github.com/EDGUS1/Amezaga-Code/tree/Navarro_Eduardo/Documentacion/Planes>
+-  [Plan de Gestion de Configuracion](https://github.com/EDGUS1/Amezaga-Code/blob/Navarro_Eduardo/Documentacion/Planes/PGC%20v1.0.pdf)
 
 ## Proyectos actuales
 
