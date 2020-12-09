@@ -4,6 +4,25 @@ ___
 
 Amezaga  code es una empresa formada por estudiantes de UNMSM con el fin de producir software.
 
+<p align="center">
+  Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+  <br>
+  <a href="https://getbootstrap.com/docs/5.0/"><strong>Explore Bootstrap docs »</strong></a>
+  <br>
+  <br>
+  <a href="https://github.com/twbs/bootstrap/issues/new?template=bug_report.md">Report bug</a>
+  ·
+  <a href="https://github.com/twbs/bootstrap/issues/new?template=feature_request.md">Request feature</a>
+  ·
+  <a href="https://themes.getbootstrap.com/">Themes</a>
+  ·
+  <a href="https://blog.getbootstrap.com/">Blog</a>
+</p>
+
+Documentación
+
+-  <https://github.com/EDGUS1/Amezaga-Code/tree/Navarro_Eduardo/Documentacion/Planes>
+
 ## Proyectos actuales
 
 - ### SOE
