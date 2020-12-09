@@ -1,4 +1,4 @@
-# Amezaga Code                  ![](https://github.com/EDGUS1/Amezaga-Code/blob/Navarro_Eduardo/Desarrollo/SOE/Fuentes/logo_empresa.JPG)
+# Amezaga Code                  ![](https://github.com/EDGUS1/Amezaga-Code/blob/Navarro_Eduardo/Desarrollo/SOE/Fuentes/logo_empresa.JPG){ width=50% }
 ___
 
 Amezaga  code es una empresa formada por estudiantes de UNMSM con el fin de producir software.
