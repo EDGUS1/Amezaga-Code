@@ -1,6 +1,6 @@
 # Amezaga Code         
 ___         
-![](https://github.com/EDGUS1/Amezaga-Code/blob/Navarro_Eduardo/Desarrollo/SOE/Fuentes/logo_empresa_opt.jpg)
+![](https://github.com/EDGUS1/Amezaga-Code/blob/main/Desarrollo/SOE/Fuentes/imagenes/logo_empresa_opt.jpg)
 
 Amezaga  code es una empresa formada por estudiantes de UNMSM con el fin de producir software.
 
@@ -8,6 +8,11 @@ Amezaga  code es una empresa formada por estudiantes de UNMSM con el fin de prod
 ## Documentación
 
 -  [Plan de Gestion de Configuracion](https://github.com/EDGUS1/Amezaga-Code/blob/Navarro_Eduardo/Documentacion/Planes/PGC%20v1.0.pdf)
+
+-  [IEEE830](https://github.com/EDGUS1/Amezaga-Code/blob/main/Documentacion/Directrices/IEEE830.pdf)
+
+-  [ISO 12207](https://github.com/EDGUS1/Amezaga-Code/blob/main/Documentacion/Directrices/ISO%2012207.pdf)
+
 
 ## Proyectos actuales
 
