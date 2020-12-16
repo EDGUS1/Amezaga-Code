@@ -5,24 +5,24 @@ html(lang='es')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title LegalFirm
     // CSS
-    link(rel='stylesheet' href='../CSS/estilos.css')
+    link(rel='stylesheet' href='../static/css/estilos.css')
     // Fuentes
     link(href='https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap' rel='stylesheet')
     // Font-Awesome
     script(src='https://kit.fontawesome.com/804f7da927.js' crossorigin='anonymous')
     // Favicon
   body
-    // Cabezera
+    // Cabecera
     header
       nav#navbar
         #navegation.container
-          a(href='index')
-            img(src='../imagenes/logo_empresa_opt.jpg' alt='Logotipo')
+          a(href='/')
+            img(src='../static/img/logo_empresa_opt.jpg' alt='Logotipo')
           span#navbar-toggle
             i.fas.fa-bars
           ul#main-nav
             li
-              a(href='index') Home
+              a(href='/') Home
             li
               a(href='#') Cursos
             li
@@ -90,7 +90,7 @@ html(lang='es')
         div
           h3 Sistema Organizativo Estudiantil (SOE)
         div
-          a(href='index')
+          a(href='/')
             img(src='logo_empresa_opt.jpg' alt='Logotipo')
           #social
             a(href='#')
