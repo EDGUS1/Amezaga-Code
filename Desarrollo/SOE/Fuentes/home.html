@@ -161,6 +161,7 @@
                 <div class="container rounded" style="border-style: solid; border-width: 2%; border-color: gray;">
                     <div class="img-pomodoro">
                         <img src="https://assets.entrepreneur.com/content/3x2/2000/20200302153935-pomodoro1.jpeg?width=700&crop=2:1" style = "width: 100%;" alt="">
+                        <audio id="audio" src="imagenes/bip.mp3" controls loop></audio>
                     </div>
                     <div id="cronometro" class="rounded">
                         <div id="tiempo">20 : 00</div>
@@ -226,7 +227,8 @@
 
     <script>
         function cronometro(){   
-            var t = 20*60000; 
+            var t = 20*600000; 
+            var audio = document.getElementById("audio");
             var x = setInterval(function() { 
                 document.getElementById('btn-cro').disabled=true;
                 var now = new Date().getTime(); 
@@ -235,16 +237,23 @@
                 var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
                 var seconds = Math.floor((t % (1000 * 60)) / 1000); 
                 if(seconds<10){
-                    document.getElementById("tiempo").innerHTML =minutes+" : 0"+seconds;
+                    document.getElementById("tiempo").innerHTML = minutes+" : 0" + seconds;
                 }else{
-                    document.getElementById("tiempo").innerHTML =minutes+" : "+seconds;
+                    document.getElementById("tiempo").innerHTML = minutes+" : " + seconds;
                 }
                 t=t-1000;
                 if (t < 0) { 
                     clearInterval(x); 
                     document.getElementById("tiempo").innerHTML = "TERMINADO";
                     document.getElementById('btn-cro').disabled=false; 
-                } 
+                    
+
+                    for(let i = 0; i < 5; i++){
+                        audio.play();
+                    }
+                } else{
+                    audio.pause();
+                }
             }, 1000); 
         }
     </script>

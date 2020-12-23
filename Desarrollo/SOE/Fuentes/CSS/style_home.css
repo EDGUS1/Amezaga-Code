@@ -6,6 +6,10 @@ html, body {
 .img-pomodoro{
 	padding: 10px;
 }
+
+.img-pomodoro audio{
+	display: none;
+}
 /*Modificar el modelo de cajas de CSS*/
 html {
     box-sizing: border-box;
