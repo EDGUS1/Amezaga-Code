@@ -1,6 +1,8 @@
 const express = require('express')
 const user = require('../controllers/user')
 const api = express.Router()
+const dbConnection = require('../connect');
+const connection = dbConnection();
 
 api.all('*', function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -12,7 +14,6 @@ api.all('*', function (req, res, next) {
 api.get('/', function(req, res){
     res.render("login")
 })
-
 api.get('/crearCurso', function(req, res){
     res.render("crearCurso")
 })
