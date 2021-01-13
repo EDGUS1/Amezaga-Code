@@ -26,7 +26,6 @@ api.get('/login', function(req, res){
 api.get('/register', function(req, res){
     res.render("register")
 })
-
 api.post('/user', user)
 
 module.exports = api

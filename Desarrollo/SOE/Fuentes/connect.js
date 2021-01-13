@@ -1,10 +1,11 @@
-const mysql = require('mysql')
+const mysql = require('mysql');
+const GlobalEnv = require('./GlobalEnv');
 
 module.exports = () => {
     return mysql.createConnection({
-      host: 'localhost',
-      user: 'root',
-      password: 'contraseña..',
-      database: 'nombredb'
+      host: GlobalEnv.hostdb,
+      user: GlobalEnv.userDb,
+      password: GlobalEnv.passwordDb,
+      database: GlobalEnv.database
     });
   }
