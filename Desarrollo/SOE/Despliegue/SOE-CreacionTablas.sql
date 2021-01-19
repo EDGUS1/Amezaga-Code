@@ -14,27 +14,14 @@ CREATE TABLE USUARIO
 
 
 
-CREATE TABLE HORARIO
-(
-	id_horario           INTEGER AUTO_INCREMENT,
-	hora_final_horario   VARCHAR(20) NULL,
-	dia_horario          VARCHAR(20) NULL,
-	hora_inicio_horario  VARCHAR(20) NULL
- AUTO_INCREMENT = ,
-	PRIMARY KEY (id_horario)
-);
-
-
-
 CREATE TABLE CURSO
 (
 	id_curso             INTEGER AUTO_INCREMENT,
 	nombre_curso         VARCHAR(20) NULL,
-	id_horario           INTEGER NOT NULL,
-	id_usuario           INTEGER NULL
+	id_usuario           INTEGER NULL,
+	descripcion          VARCHAR(200) NULL
  AUTO_INCREMENT = ,
 	PRIMARY KEY (id_curso),
-	FOREIGN KEY R_9 (id_horario) REFERENCES HORARIO (id_horario),
 	FOREIGN KEY R_13 (id_usuario) REFERENCES USUARIO (id_usuario)
 );
 
@@ -80,7 +67,8 @@ CREATE TABLE TAREA
 	nombre_tarea         VARCHAR(20) NULL,
 	fecha_entrega_tarea  VARCHAR(20) NULL,
 	tipo_entrega         VARCHAR(20) NULL,
-	id_curso             INTEGER NULL
+	id_curso             INTEGER NULL,
+	archivo              VARCHAR(500) NULL
  AUTO_INCREMENT = ,
 	PRIMARY KEY (id_tarea),
 	FOREIGN KEY R_11 (id_curso) REFERENCES CURSO (id_curso)
@@ -99,3 +87,5 @@ CREATE TABLE ENCUESTA
 	PRIMARY KEY (id_encuesta),
 	FOREIGN KEY R_5 (id_usuario) REFERENCES USUARIO (id_usuario)
 );
+
+
