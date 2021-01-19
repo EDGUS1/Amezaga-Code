@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="766bfee5-cf5e-43f4-9ffc-7820138acdc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fb7f9db0-0457-4c62-a3c2-0a6b58bb2979" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,38 +28,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1lkFyLIUCMU4S4PipwOUVQsmVuK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1lkPe3W2hPh8HvdKNfF2efEGJzu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Desarrollo/SOE/Fuentes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="766bfee5-cf5e-43f4-9ffc-7820138acdc9" name="Default Changelist" comment="" />
-      <created>1608133435583</created>
+      <changelist id="fb7f9db0-0457-4c62-a3c2-0a6b58bb2979" name="Default Changelist" comment="" />
+      <created>1608138207797</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1608133435583</updated>
-      <workItem from="1608133436643" duration="4753000" />
-      <workItem from="1608143015838" duration="3624000" />
+      <updated>1608138207797</updated>
+      <workItem from="1608138208938" duration="1685000" />
     </task>
     <servers />
   </component>
@@ -77,16 +76,14 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="318" y="175" width="719" height="452" key="EditFileWatcherDialog" timestamp="1608133989141">
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1608143008764">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="318" y="175" width="719" height="452" key="EditFileWatcherDialog/0.27.1366.741@0.27.1366.741" timestamp="1608133989141" />
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1608138204809">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1608138204808" />
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1608143008764" />
   </component>
 </project>
