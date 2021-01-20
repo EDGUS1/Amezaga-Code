@@ -41,10 +41,11 @@ form {
     justify-content: space-between;
 }
 
-input {
+input{
     height: 25px;
     border-radius: 7px;
-    border: 1px solid black;
+    border: 1px solid rgb(119, 119, 119);
+    padding: 1%;
 }
 
 #btn {
