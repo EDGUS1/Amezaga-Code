@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title Document
-    link(rel='stylesheet' href='../static/css/register.css')
+    link(rel='stylesheet' href='static/css/register.css')
     script(src='https://www.google.com/recaptcha/api.js?hl=es')
   body
     #cabezera
@@ -43,7 +43,7 @@ html(lang='en')
           input#btn(type='button' value='Crear Cuenta' @click = 'signup')
     .new
       | Ya tienes Cuenta? 
-      a(href='#') Inicia sesión aquí
+      a(href='/login') Inicia sesión aquí
     footer
       ul
         li Terminos
