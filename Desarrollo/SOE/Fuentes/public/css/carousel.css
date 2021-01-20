@@ -2,6 +2,8 @@ body {
     /* padding-top: 3rem; */
     /* padding-bottom: 3rem; */
     background: #000;
+    height: 100%;
+    overflow: hidden;
 }
 
 .carousel-caption {

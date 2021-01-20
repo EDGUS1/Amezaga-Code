@@ -14,9 +14,11 @@ api.all("*", function(req, res, next) {
 api.get("/", function(req, res) {
     res.render("principal", { nombre: "Eduardo" });
 });
+
 api.get("/lista", function(req, res) {
     res.render("listadocursos", { nombre: "Eduardo" });
 });
+
 api.get("/prueba", (req, res) => {
     connection.query("SELECT * FROM usuario", (err, result) => {
         console.log(result);
@@ -26,21 +28,38 @@ api.get("/prueba", (req, res) => {
     });
 });
 
+api.get("/curso", (req, res) => {
+    res.render("curso");
+});
+
 api.get("/crearCurso", function(req, res) {
     res.render("crearCurso");
 });
+
 api.get("/crearTarea", function(req, res) {
     res.render("crearTarea");
 });
+
 api.get("/login", function(req, res) {
     res.render("login");
 });
+
 api.get("/register", function(req, res) {
     res.render("register");
 });
-api.get("/home", function(req, res) {
+
+api.get("/dashboard", function(req, res) {
     res.render("home");
 });
+
+api.get("/listacursos", (req, res) => {
+    res.render("lista");
+});
+
 api.post("/user", user);
+
+api.post("/login", (req, res) => {
+    res.send("Registrado");
+});
 
 module.exports = api;
