@@ -16,7 +16,7 @@ api.get("/", function(req, res) {
 });
 
 api.get("/lista", function(req, res) {
-    res.render("listadocursos", { nombre: "Eduardo" });
+    res.render("lista", { nombre: "Eduardo" });
 });
 
 api.get("/prueba", (req, res) => {
@@ -52,7 +52,7 @@ api.get("/dashboard", function(req, res) {
     res.render("home");
 });
 
-api.get("/listacursos", (req, res) => {
+api.get("/lista", (req, res) => {
     res.render("lista");
 });
 
@@ -61,5 +61,9 @@ api.post("/user", user);
 api.post("/login", (req, res) => {
     res.send("Registrado");
 });
+
+/* api.use(function(req, res, next) {
+    res.status(404).send("Sorry cant find that!");
+}); */
 
 module.exports = api;
