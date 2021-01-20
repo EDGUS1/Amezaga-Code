@@ -18,24 +18,29 @@ html(lang='en')
     #texto-arriba
       h5 Unirse a SOE
       h3 Crea tu Cuenta
-    #formulario
+    #app
       section
         form(action='')
+          
+          label(for='') Nombre
+          br
+          input(type='text' v-model='user.name')
+          br
           label(for='') Email
           br
-          input(type='text')
+          input(type='text' v-model='user.email')
           br
           label(for='') Contraseña
           br
-          input(type='password')
+          input(type='password' v-model='user.password')
           br
           label(for='') Confirmar Contraseña
           br
-          input(type='password')
+          input(type='password' v-model= 'user.repassword')
           br
           #cap
             .g-recaptcha(data-sitekey='6LdKywEaAAAAAG3QjlZmaopos4sfWRyhZecp9mlr')
-          input#btn(type='button' value='Crear Cuenta')
+          input#btn(type='button' value='Crear Cuenta' @click = 'signup')
     .new
       | Ya tienes Cuenta? 
       a(href='#') Inicia sesión aquí
@@ -45,3 +50,30 @@ html(lang='en')
         li Provacidad
         li Seguridad
         li Contactar con AmezagaCode
+        script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js')
+        script(src='https://unpkg.com/vue-router/dist/vue-router.js')
+        script(src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')
+        script.
+          var app = new Vue({
+            el: '#app',
+            data: {
+              user: {
+                name: '',
+                email: '',
+                password: '',
+                repassword: ''
+              }
+            },
+            methods: {
+              signup() {
+                axios.post('/user', {
+                  command: 'REGISTER_USER',
+                  transaction: this.user
+                })
+                  .then(resp => {
+                    const response = resp.data
+                    console.log(response)
+                  })
+              }
+            }
+          })

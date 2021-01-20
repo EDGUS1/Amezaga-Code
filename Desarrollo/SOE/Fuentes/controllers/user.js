@@ -1,5 +1,8 @@
 const Usuario = require('../models/Usuarios');
 const bcrypt = require('bcrypt')
+const dbConnection = require('../connect');
+const connection = dbConnection();
+
 userOperation = function (req, res) {
     const command = req.body.command
     switch (command) {
@@ -21,7 +24,11 @@ function registerUser(req, res) {
     const saltRounds = 10
     const newUsuario = new Usuario(user)
     bcrypt.hash(newUsuario.password, saltRounds).then((hash) => {
-        newUsuario.save((err) => {
+        connection.connect()
+        connection.query(
+            'INSERT INTO usuario values(?,?,?,?)',
+            [newUsuario.nombre, newUsuario.email, newUsuario.password, newUsuario.createAt],
+            (err, result) => {
             if (err) {
                 return res
                     .status(200)
@@ -37,7 +44,8 @@ function registerUser(req, res) {
                         message: 'Usuario registrado correctamente'
                     })
             }
-        })
+        }) 
+        connection.end()
             /*.then((res) => {
                 return res
                     .status(200)
