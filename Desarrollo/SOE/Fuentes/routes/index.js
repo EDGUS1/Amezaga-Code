@@ -12,9 +12,11 @@ api.all('*', function (req, res, next) {
 });
 
 api.get('/', function(req, res){
-    res.render("login")
+    res.render("principal", {nombre: 'Eduardo'})
 })
-
+api.get('/lista', function(req, res){
+    res.render("listadocursos", {nombre: 'Eduardo'})
+})
 api.get('/prueba', (req, res) => {
     connection.query('SELECT * FROM usuario', (err, result) => {
       console.log(result)

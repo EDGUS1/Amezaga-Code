@@ -15,5 +15,5 @@ app.use(methodOverride())
 app.use(cors())
 app.use(route)
 app.use('/static', express.static(__dirname + '/public'))
-
+/* app.use(express.static(path.join(__dirname, 'app/public'))); */
 module.exports = app
