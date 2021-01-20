@@ -1,15 +1,7 @@
 html, body {
 	height: 100%;
 }
-/* pomodoro*/
 
-.img-pomodoro{
-	padding: 10px;
-}
-
-.img-pomodoro audio{
-	display: none;
-}
 /*Modificar el modelo de cajas de CSS*/
 html {
     box-sizing: border-box;
@@ -82,14 +74,11 @@ p {
 }
 
 #navbar {
-	background-color: #ffffff;
+	background-color: #0b1245;
 }
 #navegation {
 	display: flex;
-    justify-content: space-between;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-color: #3c3c3c;
+	justify-content: space-between;
 }
 #main-nav {
 	display: flex;
@@ -97,7 +86,7 @@ p {
 	font-family: 'Lato', sans-serif;
 }
 #main-nav li a {
-	color: rgb(0, 0, 0);
+	color: #fff;
 	text-decoration: none;
 	padding: 25px 0.9em;
 	display: inline-block;
@@ -107,10 +96,10 @@ p {
 	padding: 25px 0.9em;
 }
 #main-nav li a:hover {
-	transform: scale(1.2);
+	background-color: #060829;
 }
 #navbar-toggle {
-	color: rgb(0, 0, 0);
+	color: #fff;
 	font-size: 1.5rem;
 	position: absolute;
 	top: 20px;
@@ -288,12 +277,12 @@ article > section:nth-child(5) {
 
 /*ESTILOS DE LAS PAGINAS*/
 main header {
-	background-color: #ffffff;
+	background-color: #e69807;
 	padding: 45px 0;
 	margin-bottom: 40px;
 }
 main header h1 {
-	color: rgb(53, 53, 53);
+	color: #fff;
 	font-size: 1.9rem;
 	text-transform: uppercase;
 }
@@ -311,44 +300,6 @@ main header h1 {
 #pages aside {
 	flex-basis: 30%;
 }
-
-#curso{
-    border-radius: 5%;
-}
-
-#ir-curso{
-    border-radius: 5%;
-    color: white;
-    text-decoration: none;
-}
-
-#profesor{
-    border-style: solid;
-    border-color: #fff;
-    border-width: 3%;
-}
-
-#ir-curso :hover > #profesor{
-    transform: scale(1.1);
-    animation-timing-function: ease;
-}
-
-#cronometro{
-    margin:5%;
-    padding: 2%;
-    text-align: center;
-    line-height: 50px;
-    background-color: black;
-    color: white;
-    font-size: xx-large;
-}
-
-#calendario{
-    margin: 5%;
-    margin-bottom: 20%;
-}
-
-
 aside h3 {
 	background-color: #f1f3fe;
 	padding: 12px 0 12px 0.5em;
@@ -392,11 +343,6 @@ aside ul li a {
 	height: 45px;
 	margin-bottom: 12px;
 }
-
-#Logo {
-	width: 30%;
-}
-
 #boletin input[type="submit"] {
 	background-color: #ff8000;
 	border: none;
@@ -521,16 +467,14 @@ input[type="submit"] {
 
 	/*CABECERA*/
 	#navegation {
-        display: block;
-        margin-bottom: 10%;
+		display: block;
 	}
 	#main-nav {
 		display: none;
 		flex-direction: column;
 	}
 	#navbar-toggle {
-        display: block;
-
+		display: block;
 	}
 	#main-nav li a {
 		display: block;
