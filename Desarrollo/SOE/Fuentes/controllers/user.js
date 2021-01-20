@@ -26,7 +26,7 @@ function registerUser(req, res) {
     bcrypt.hash(newUsuario.password, saltRounds).then((hash) => {
         connection.connect()
         connection.query(
-            'INSERT INTO usuario values(?,?,?,?)',
+            'INSERT INTO usuario() values(?,?,?,?)',
             [newUsuario.nombre, newUsuario.email, newUsuario.password, newUsuario.createAt],
             (err, result) => {
             if (err) {

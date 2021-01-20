@@ -1,5 +1,8 @@
 const express = require("express");
 const user = require("../controllers/user");
+const homework = require("../controllers/homework");
+const course = require("../controllers/course");
+
 const api = express.Router();
 const dbConnection = require("../connect");
 const connection = dbConnection();
@@ -57,6 +60,9 @@ api.get("/listacursos", (req, res) => {
 });
 
 api.post("/user", user);
+api.post('/homework', homework);
+
+api.post('/course', course);
 
 api.post("/login", (req, res) => {
     res.send("Registrado");
