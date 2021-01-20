@@ -9,6 +9,9 @@ userOperation = function (req, res) {
         case 'REGISTER_USER':
             registerUser(req, res)
             break
+        case 'LOGIN_USER':
+            loginUser(req,res)
+            break
         default:
             return res
                 .status(500)
@@ -26,8 +29,8 @@ function registerUser(req, res) {
     bcrypt.hash(newUsuario.password, saltRounds).then((hash) => {
         connection.connect()
         connection.query(
-            'INSERT INTO usuario values(?,?,?,?)',
-            [newUsuario.nombre, newUsuario.email, newUsuario.password, newUsuario.createAt],
+            'INSERT INTO usuario values(?,?,?)',
+            [newUsuario.nombre, newUsuario.email, newUsuario.password],
             (err, result) => {
             if (err) {
                 return res
@@ -46,25 +49,27 @@ function registerUser(req, res) {
             }
         }) 
         connection.end()
-            /*.then((res) => {
-                return res
-                    .status(200)
-                    .send({
-                        status: 'SUCCESS',
-                        message: 'Usuario registrado correctamente'
-                    })
-            })
-            .catch((err) => {
-                return res
-                    .status(200)
-                    .send({
-                        status: 'FAILED',
-                        message: err
-                    })
+    });   
+}
+function loginUser(req, res) {
+    const newUsuario = new Usuario(req.body?.transaction)
+    connection.connect()
+    connection.query('SELECT TOP 1 * FROM usuario WHERE email = ?', [newUsuario.email],(err,result) => {
+        if (err) {
+            return res
+                .status(200)
+                .send({
+                    status: 'Failed',
+                    message: err
+                })
+        }
+        if(result) {
+            bcrypt.compare() 
+        }
 
-            })*/
-    });
-    
-    
+              
+        
+       // connection.end()
+    })
 }
 module.exports = userOperation
