@@ -17,7 +17,7 @@ html(lang='es')
       nav#navbar
         #navegation.container
           a(href='/')
-            img#Logo(src='static/img/logo_empresa.png' alt='Logotipo')
+            img(src='../static/img/logo_empresa_opt.jpg' alt='Logotipo')
           span#navbar-toggle
             i.fas.fa-bars
           ul#main-nav
@@ -47,7 +47,6 @@ html(lang='es')
             span.asterisco
               | (*)
             |  son requeridos.
-          #app
           form(action='' method='POST')
             label(for='titulo')
               | Titulo 
@@ -92,7 +91,7 @@ html(lang='es')
           h3 Sistema Organizativo Estudiantil (SOE)
         div
           a(href='/')
-            img(src='static/img/logo_empresa_2x.png' alt='Logotipo')
+            img(src='logo_empresa_opt.jpg' alt='Logotipo')
           #social
             a(href='#')
               i.fab.fa-facebook-f
@@ -103,37 +102,6 @@ html(lang='es')
       #copyright
         | © Derechos reservados.
     script.
-
-    script.
-          var app = new Vue({
-            el: '#app',
-            data: {
-              tarea: {
-                nombre_tarea: '',
-                fecha_entrega_tarea: '',
-                tipo_entrega: '',
-                id_curso: '',
-                archivo: ''
-              }
-            },
-
-
-    methods: {
-              crearTarea() {
-                axios.post('/homework', {
-                  command: 'REGISTER_HOMEWORK',
-                  transaction: this.course
-                })
-                  .then(resp => {
-                    const response = resp.data
-                    console.log(response)
-                  })
-              }
-            }
-
-
-
-
       // Comportamientos para el menú de navegación.
       let mainNav=document.getElementById('main-nav');
       let navbarToggle=document.getElementById('navbar-toggle');

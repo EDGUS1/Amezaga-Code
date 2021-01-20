@@ -3,7 +3,7 @@ html(lang='es')
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title LegalFirm
+    title Sistema Organizacional Estudiantil (SOE)
     // CSS
     link(rel='stylesheet' href='../static/css/estilos.css')
     // Fuentes
@@ -12,12 +12,12 @@ html(lang='es')
     script(src='https://kit.fontawesome.com/804f7da927.js' crossorigin='anonymous')
     // Favicon
   body
-    // Cabecera
+    // Cabezera
     header
       nav#navbar
         #navegation.container
           a(href='/')
-            img#Logo(src='static/img/logo_empresa.png' alt='Logotipo')
+            img(src='../static/img/logo_empresa_opt.jpg' alt='Logotipo')
           span#navbar-toggle
             i.fas.fa-bars
           ul#main-nav
@@ -35,10 +35,10 @@ html(lang='es')
     main
       header
         .container
-          h1 CREACIÓN DE TAREA
+          h1 CREACIÓN DE CURSO
       article#pages.container
         section
-          h2 Formulario de creación de tarea
+          h2 Formulario de creación de un curso
           p
             | Porfavor rellenar con cuidado el siguiente formulario.
             br
@@ -47,30 +47,32 @@ html(lang='es')
             span.asterisco
               | (*)
             |  son requeridos.
-          #app
           form(action='' method='POST')
-            label(for='titulo')
-              | Titulo 
+            label(for='nombre')
+              | Nombre del curso
               span.asterisco *
               | :
-            input#titulo(type='text' required='')
+            input#nombre(type='text' required='')
+            label(for='apellido')
+              | Sección del curso 
+              span.asterisco *
+              | :
+            input#apellido(type='text' required='')
             label(for='email')
-              | Correo electrónico a enviar la tarea
+              | Grado del curso 
               span.asterisco *
               | :
             input#email(type='email' required='')
-            label(for='fecha')
-              | Fecha de entrega 
+            label(for='telefono')
+              | Aula asignada 
               span.asterisco *
               | :
-            input#fecha(type='date' required='' style='width: 50%; height: 45px; display: inline-block; border: 1px solid #ccc;')
-            label(for='comentario') Comentario o descripción de la tarea:
-            textarea#comentario(name='comentario' cols='30' rows='10')
-            input(type='submit' value='Enviar formulario')
+            input#telefono(type='text' required='')
+            input(type='submit' value='Crear curso')
         aside
           h3 Redes sociales
           #socialMedia
-            a(href='#')
+            a(hre='' requiredf='#')
               i.fab.fa-facebook-f
             a(href='#')
               i.fab.fa-twitter
@@ -92,7 +94,7 @@ html(lang='es')
           h3 Sistema Organizativo Estudiantil (SOE)
         div
           a(href='/')
-            img(src='static/img/logo_empresa_2x.png' alt='Logotipo')
+            img(src='logo_empresa_opt.jpg' alt='Logotipo')
           #social
             a(href='#')
               i.fab.fa-facebook-f
@@ -103,37 +105,6 @@ html(lang='es')
       #copyright
         | © Derechos reservados.
     script.
-
-    script.
-          var app = new Vue({
-            el: '#app',
-            data: {
-              tarea: {
-                nombre_tarea: '',
-                fecha_entrega_tarea: '',
-                tipo_entrega: '',
-                id_curso: '',
-                archivo: ''
-              }
-            },
-
-
-    methods: {
-              crearTarea() {
-                axios.post('/homework', {
-                  command: 'REGISTER_HOMEWORK',
-                  transaction: this.course
-                })
-                  .then(resp => {
-                    const response = resp.data
-                    console.log(response)
-                  })
-              }
-            }
-
-
-
-
       // Comportamientos para el menú de navegación.
       let mainNav=document.getElementById('main-nav');
       let navbarToggle=document.getElementById('navbar-toggle');

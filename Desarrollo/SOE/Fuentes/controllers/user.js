@@ -64,7 +64,24 @@ function loginUser(req, res) {
                 })
         }
         if(result) {
-            bcrypt.compare() 
+            bcrypt.compare(newUsuario.password, result.password, (err2,result2) => {
+                if(err2) {
+                    return res
+                    .status(200)
+                    .send({
+                        status: 'FAILED',
+                        message: 'La contraseña es incorrecta'
+                    })
+                }
+                if(result2){
+                    return res
+                    .status(200)
+                    .send({
+                        status: 'SUCCESS',
+                        message: 'Usuario registrado correctamente'
+                    })
+                }
+            }) 
         }
 
               
