@@ -1,38 +1,30 @@
 doctype html
-html(lang='es')
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title Document
-    link(rel='stylesheet' href='static/css/style_login.css')
-  body
-    #cabezera
-      header
-        nav#navbar
-          #navegation.container
-            a(href='/')
-              img(src='../static/img/logo_empresa_opt.jpg' alt='Logotipo')
-            span#navbar-toggle
-              i.fas.fa-bars
-    #texto-arriba
-      h5 Ingrese a SOE
-    section#formulario
-      form(method='POST')
-        label(for='email') Email
-        br
-        input(type='text' id='email' required autocomplete="off" autofocus)
-        br
-        label(for='password') Contraseña
-        br
-        input(type='password' id='password' required)
-        br
-        input#btn(type='submit' value='Acceder')
-    .new
-      | ¿Nuevo en Soe? 
-      a(href='/register') Crear una cuenta
-    footer
-      ul
-        li Terminos
-        li Provacidad
-        li Seguridad
-        li Contactar con AmezagaCode
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title SOE - Login
+  link(rel='stylesheet' href='static/css/style_login.css')
+#imagen
+  img.img(src='static/img/logo.JPG' alt='')
+p Iniciar sesion
+section#formulario
+  form(action='')
+    label(for='email') Email
+    br
+    input#email(type='email' required='' autocomplete='off' autofocus='')
+    br
+    label(for='password') Contrase&ntilde;a
+    br
+    input#password(type='password' required='')
+    br
+    input#btn(type='submit' value='Acceder')
+    a.btn-volver(href='/')
+      span Regresar
+.new
+  | &iquest;Nuevo en Soe? 
+  a(href='/register') Crear una cuenta
+br
+br
+hr
+footer
+  span &copy; Todos los derechos reservados
