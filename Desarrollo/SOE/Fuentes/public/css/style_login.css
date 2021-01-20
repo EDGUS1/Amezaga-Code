@@ -1,7 +1,12 @@
-#imagen {
-    width: 100px;
-    height: 100px;
-    margin: 50px auto 10px;
+
+#texto-arriba{
+    text-align: center;
+    padding: 1px;
+    font-weight: lighter;
+    font-size: 2rem;
+    line-height: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
 }
 
 img {
@@ -36,10 +41,11 @@ form {
     justify-content: space-between;
 }
 
-input {
+input{
     height: 25px;
     border-radius: 7px;
-    border: 1px solid black;
+    border: 1px solid rgb(119, 119, 119);
+    padding: 1%;
 }
 
 #btn {
@@ -70,14 +76,13 @@ input {
     text-decoration: none;
 }
 
-footer ul {
+footer ul{
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
 }
-
-footer ul li {
+footer ul li{
     text-decoration: none;
     padding: 15px;
 }
