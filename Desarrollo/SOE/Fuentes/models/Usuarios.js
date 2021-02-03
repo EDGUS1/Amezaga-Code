@@ -1,10 +1,11 @@
  class Usuario {
     
     constructor(user){
-        this.nombre = user.nombre,
+        this.id= user.id,
+        this.nombre = user.name,
         this.email = user.email,
-        this.password = user.password,
-        this.createAt = user.createAt || new Date()
+        this.password = user.password
+       // this.createAt = user.createAt || new Date()
     }
 }
 module.exports = Usuario

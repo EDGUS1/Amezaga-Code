@@ -66,6 +66,7 @@ html(lang='en')
             },
             methods: {
               signup() {
+                console.log(this.user)
                 axios.post('/user', {
                   command: 'REGISTER_USER',
                   transaction: this.user
